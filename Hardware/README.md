@@ -8,7 +8,7 @@
 A custom-engineered macropad utilizing entirely 3D-printed Hall-effect switches. This project demonstrates end-to-end hardware design, from schematic capture and PCB layout to physical assembly and mechanism tuning. [cite_start]The hardware serves as a development platform for writing custom peripheral firmware in C++ and Rust[cite: 4].
 
 <div align="center">
-  <img src="macropad-render.png" alt="Physical PCB Assembly" width="600"/>
+  <img src="[Link to image of your physical soldered board]" alt="Physical PCB Assembly" width="600"/>
 </div>
 
 ## Current Status & Next Steps
@@ -34,11 +34,9 @@ This repository contains the complete hardware definition files needed to replic
     * `/KiCad_Project` - Raw `.kicad_pro`, `.kicad_sch`, and `.kicad_pcb` source files.
 * `/CAD`
     * .STL files for the 3D-printed switch mechanisms.
-* `/Firmware`
-    * Future embedded programming
 
 ## Visuals & Renders
 
-| PCB Soldered| Schematic Design | Switch Render | 
-| :---: | :---: | :---: |
-| <img src="macropad-pcb.jpg" alt="PCB" width="400"/> | <img src="macropad-schematic.jpg" alt="Schematic" width="400"/> | <img src="switch-render.png" alt="Switch" width="400"/>
+| Schematic Design | 3D PCB Render |
+| :---: | :---: |
+| <img src="[Link to schematic image]" alt="Schematic" width="400"/> | <img src="[Link to 3D KiCad Render]" alt="3D Render" width="400"/> |
