@@ -26,16 +26,28 @@ A custom-engineered macropad utilizing entirely 3D-printed Hall-effect switches.
 
 ## Repository Structure
 
-This repository contains the complete hardware definition files needed to replicate the board.
+This repository contains the complete hardware definition and firmware files.
 
 * `/Hardware`
     * `/Gerbers` - Ready-to-manufacture fabrication files (Copper, Mask, Silkscreen, Edge Cuts, Drill files).
-    * `macropad_schematic.pdf` - High-resolution electrical schematic for quick review.
+    * `Macropad Schematic.pdf` - High-resolution electrical schematic for quick review.
     * `/KiCad_Project` - Raw `.kicad_pro`, `.kicad_sch`, and `.kicad_pcb` source files.
 * `/CAD`
     * .STL files for the 3D-printed switch mechanisms.
 * `/Firmware`
-    * Future embedded programming
+    * `main.cpp` - Firmware source (PlatformIO / Arduino framework)
+    * `config.h` - Pin map, keymap, and tuning constants
+    * `README.md` - Build, flash, tuning, and troubleshooting guide
+
+## Firmware Quick Start
+
+```bash
+pip install platformio
+pio run -t upload        # from the repo root, Pro Micro plugged in
+pio device monitor       # 115200 baud; type 'h' for tuning commands
+```
+
+See [Firmware/README.md](Firmware/README.md) for the pin map, key remapping, sensor tuning, and troubleshooting.
 
 ## Visuals & Renders
 
